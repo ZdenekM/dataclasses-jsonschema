@@ -14,7 +14,7 @@ def read(f):
 
 
 setup(
-    name='dataclasses-jsonschema',
+    name='dataclasses-jsonschema-rereleased',
     description='JSON schema generation from dataclasses',
     long_description=read('README.rst'),
     packages=['dataclasses_jsonschema'],
@@ -24,8 +24,8 @@ setup(
     url='https://github.com/s-knibbs/dataclasses-jsonschema',
     install_requires=requires,
     extras_require={
-        'fast-validation': ["fastjsonschema==2.13"],
-        'apispec': ["apispec"]
+        'fast-validation': ["fastjsonschema==2.14.5"],
+        'apispec': ["apispec==3.3.2"]
     },
     setup_requires=['pytest-runner', 'setuptools_scm'],
     tests_require=['pytest', 'flake8', 'mypy', 'apispec', 'apispec_webframeworks', 'flask', 'pytest-ordering'],
